@@ -1,0 +1,79 @@
+#note my key are binding
+#in eg: caps bind ctrl, etc;
+
+#iterm2
+Caps + W = functionality + behavior similar with dw , u can use it in terminal or vim insert mode too;
+
+#vimming editor(for insert mode purpose)
+#begining or begin of word meaning from right to left & end of word means from left to right (the logic have concept "time" from u stand so from cursor to left for begining & vice versa ); 
+x = deleting one char backward if the cursor was at the end it del to left or normal delete;
+D = deleting from cursor way to end (1 block);
+dd = (deleting duplicate) deleting & duplicate one line so you can p as option;
+dw = delete a word from cursor to the begining spaces or symbols, break by spaces (break space not included as deleted);
+de = same concept & behavior with dw from cursor but to end which mean to right;
+ciw = delete a word and go insert mode;
+y = copy or yank;
+v = visual mode select 1 charcter from cursor;
+V = visual mode select 1 block line base cursor;
+p = paste;
+Caps + [ = esc or out;
+- = decrement num , base on cursor point, if cursor not point the num it will search the closer num from cursor to right;
++ = increment num, apply same behavior;
+Caps + a = select all;
+o = insert new line;
+u = ctrl + z or back or redo;
+e = jump to end of words (punctuation considered words);
+b = jump to begin of words (punctuation considered words);
+w = jump by start of next words (punctuaion considered words);
+W = jump by words (spaces separate words);
+G = move way to bottom, u can combine with visual mode;
+D = move 20 lines down;
+U = move 20 lines up (carefull u can redo);
+;f = find the whole file with telescope;
+sf = search file base on root dir now;
+;r = live grep in ur code or insert mode like vim / but u can have preview and similar with ctrlF;
+\\\\ = buffers;
+;t = help tags;
+;; = resume the last one;
+;e = diagnostic;
+gr = rename the same name file;
+
+#vimming tabs
+te = create new vim tab;
+tab = move between vim tab;
+ss = split second vim window;
+sv = split vertical vim window;
+sh =  move to vim window left;
+sj = move vim window down;
+sk = move vim window up;
+sl = move vim window right;
+caps + w + ↑ = reseze vim window up;
+cops + w + ↓ = resize vim window down; apply same with left & right;
+
+#vimming mode control
+? = like ctrl + f for find or search;
+:E = enter explore mode, more like folder format to explore;
+:E + R = renaming file , eazy way but must on explore mode by vim;
+:q! = exit without save;
+:q = exit , but the condition nothing change or already save the change;
+:w = write or save;
+:w! = write or save but more agressive;
+:a = aggresive more like sudo;
+:wqa = combos save & get the fuck out here;
+:wqa! = more agressive;
+:s = select & changing same word at once, ( :s/textA/textB ) changing all text A to B apply same concept with rename mv, you can narrow the selection with Visual mode;
+mt = to mark target in explore mode;
+mf = to mark the files can do it more than one;
+mc = for mark copy to the target that we have been mark;
+mm = for move the mark files to the target 11/12 w mc;
+R =  for renaming files;
+
+#tmuxx
+caps + T + C = create new terminal tmux;
+
+collorbuddyjkdahajs
+ahsdjhasd
+askjhdashd
+hasjdhkacollorbuddyd
+hasdhacollorbuddyd
+
