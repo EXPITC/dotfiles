@@ -38,6 +38,14 @@ sf = search file base on root dir now;
 ;e = diagnostic;
 gr = rename the same name file;
 
+#when cmp(completion) + snip(snippet) on code
+Caps + e = close the completion tab;
+Caps + space = mapping completion;
+CR(enter) = confirm;
+Caps + f = scroll +4(up) docs or description of what the auto complete text about;
+Cpas + d = scroll -4(down) same with Caps+f;
+
+
 #vimming tabs
 te = create new vim tab;
 tab = move between vim tab;
