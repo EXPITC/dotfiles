@@ -1,11 +1,11 @@
 #note my key are binding
 #in eg: caps bind ctrl, etc;
 
-#iterm2
+# iterm2
 Caps + W = functionality + behavior similar with dw , u can use it in terminal or vim insert mode too;
 
-#vimming editor(for insert mode purpose)
-#begining or begin of word meaning from right to left & end of word means from left to right (the logic have concept "time" from u stand so from cursor to left for begining & vice versa ); 
+# vimming editor(for insert mode purpose)
+# begining or begin of word meaning from right to left & end of word means from left to right (the logic have concept "time" from u stand so from cursor to left for begining & vice versa ); 
 x = deleting one char backward if the cursor was at the end it del to left or normal delete;
 D = deleting from cursor way to end (1 block);
 dd = (deleting duplicate) deleting & duplicate one line so you can p as option;
@@ -40,15 +40,18 @@ sf = search file base on root dir now same with :E vim;
 ;t = help tags;
 ;; = resume the last one;
 ;e = Lists Diagnostics for all open buffers;
-#when cmp(completion) + snip(snippet) on code
+# when cmp(completion) + snip(snippet) on code
 Caps + e = close the completion tab;
 Caps + space = mapping completion;
 CR(enter) = confirm;
 Caps + f = scroll +4(up) docs or description of what the auto complete text about;
 Cpas + d = scroll -4(down) same with Caps+f;
+# cmp(completion) & snippet
+Caps + e = exit completion words;
+Caps + n or p = manual show snippet or completion words default is automatic. Caps n or p when completion show can be use as down and up while changing the word at the same time;
 
 
-#vimming tabs
+# vimming tabs
 te = create new vim tab;
 tab = move between vim tab;
 ss = split second vim window;
@@ -58,10 +61,11 @@ sj = move vim window down;
 sk = move vim window up;
 sl = move vim window right;
 caps + w + ↑ = reseze vim window up;
-cops + w + ↓ = resize vim window down; apply same with left & right;
+caps + w + ↓ = resize vim window down; apply same with left & right;
 
-#vimming mode control
+# vimming mode control
 ? = like ctrl + f for find or search;
+/ = similar with ?;
 :E = enter explore mode, more like folder format to explore;
 :E + R = renaming file , eazy way but must on explore mode by vim;
 :q! = exit without save;
@@ -78,8 +82,13 @@ mc = for mark copy to the target that we have been mark;
 mm = for move the mark files to the target 11/12 w mc;
 R =  for renaming files;
 
-#tmuxx
-caps + T + C = create new terminal tmux;
+# tmuxx
+Caps + t + c = create new terminal tab tmux;
+Caps + t + n = next tmux tab;
+Caps + t + p = previous tmux tab;
+Caps + t + , = rename tmux tab;
+Caps + t + s = Move tmux tab with option & preview;
+
 
 collorbuddyjkdahajs
 ahsdjhasd
