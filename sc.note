@@ -30,9 +30,18 @@ b = jump to begin of words (punctuation considered words);
 w = jump by start of next words (punctuaion considered words);
 W = jump by words (spaces separate words);
 G = move way to bottom, u can combine with visual mode;
+H/M/L = move High/Middle/Low;
+[[ = move to top;
+]] = move to bottom;
 D = move 20 lines down;
 U = move 20 lines up (carefull u can redo);
-gr = rename the same name file;
+# lspsaga
+= = diagnostic jump next , to see diagnostic;
+K = hover doc(documentation) not just documentation but can show what functionality write is & etc that similar;
+gr = rename the same name string;
+gp = peek definition;
+gd = lsp finder to see like import export or we can say string contain in another files;
+
 # telescope
 ;f = find the whole file(just file) with telescope it can jump to parent folder too all just files;
 sf = search file base on root dir now same with :E vim;
