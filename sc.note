@@ -31,15 +31,15 @@ W = jump by words (spaces separate words);
 G = move way to bottom, u can combine with visual mode;
 D = move 20 lines down;
 U = move 20 lines up (carefull u can redo);
-;f = find the whole file with telescope;
-sf = search file base on root dir now;
-;r = live grep in ur code or insert mode like vim / but u can have preview and similar with ctrlF;
-\\\\ = buffers;
+gr = rename the same name file;
+# telescope
+;f = find the whole file(just file) with telescope it can jump to parent folder too all just files;
+sf = search file base on root dir now same with :E vim;
+;r = live grep in ur code meaning u can search like keyword to see what file contain that keyword or like insert mode like vim then u use ? or / to search but u can have preview from other files like ;f ;
+\\\\ = open current buffers. buffers meaning Lists open files in current neovim instance;
 ;t = help tags;
 ;; = resume the last one;
-;e = diagnostic;
-gr = rename the same name file;
-
+;e = Lists Diagnostics for all open buffers;
 #when cmp(completion) + snip(snippet) on code
 Caps + e = close the completion tab;
 Caps + space = mapping completion;
