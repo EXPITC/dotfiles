@@ -13,6 +13,7 @@ dw = delete a word from cursor to the begining spaces or symbols, break by space
 de = same concept & behavior with dw from cursor but to end which mean to right;
 ciw = delete a word and go insert mode;
 y = copy or yank;
+yy = copy or yank 1 line instant;
 v = visual mode select 1 charcter from cursor;
 V = visual mode select 1 block line base cursor;
 p = paste;
