@@ -71,7 +71,8 @@ Caps + f = scroll +4(up) docs or description of what the auto complete text abou
 Caps + d = scroll -4(down) same with Caps+f;
 Caps + n or p = manual show snippet or completion words default is automatic. Caps n or p when completion show can be use as down and up while changing the word at the same time;
 
-
+# zen mode
+Tabs + w + o = Opens the current buffer in a new full-screen floating window doesn't mess with existing window layouts / splits;
 # vimming tabs
 te = create new vim tab;
 tab = move between vim tab;
