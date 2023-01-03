@@ -35,6 +35,14 @@ H/M/L = move High/Middle/Low;
 ]] = move to bottom;
 D = move 20 lines down;
 U = move 20 lines up (carefull u can redo);
+# comment /normal
+gcc = comment linewise;
+gbc = comment blockwise;
+[count]gcc = toggles the number of line given as a prefix-count using linewise;
+[count]gbc = toggles the number of line given as a prefix-count using blockwise;
+# comment /visual
+gc = comment linewise;
+gb = comemnt blockwise;
 # lspsaga /normal
 = = diagnostic jump next , to see diagnostic;
 K = hover doc(documentation) not just documentation but can show what functionality write is & etc that similar;
