@@ -33,6 +33,9 @@ Session.vim
 .vim/syntax/Dockerfile.vim
 .vim/snippets/
 
+# Configstore
+.config/configstore
+
 # Xcode
 build/
 *.pbxuser
