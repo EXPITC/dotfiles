@@ -41,6 +41,9 @@ K = hover doc(documentation) not just documentation but can show what functional
 gr = rename the same name string;
 gp = peek definition;
 gd = lsp finder to see like import export or we can say string contain in another files;
+# git /normal
+\gb = open blame window;
+\go = Open file/folder in git repository;
 # lspsaga /insert
 Caps + i = bring signature help when insert more like definition of functionality etc;
 # telescope /normal
