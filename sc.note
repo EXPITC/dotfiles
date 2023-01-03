@@ -35,14 +35,15 @@ H/M/L = move High/Middle/Low;
 ]] = move to bottom;
 D = move 20 lines down;
 U = move 20 lines up (carefull u can redo);
-# lspsaga
+# lspsaga /normal
 = = diagnostic jump next , to see diagnostic;
 K = hover doc(documentation) not just documentation but can show what functionality write is & etc that similar;
 gr = rename the same name string;
 gp = peek definition;
 gd = lsp finder to see like import export or we can say string contain in another files;
-
-# telescope
+# lspsaga /insert
+Caps + i = bring signature help when insert more like definition of functionality etc;
+# telescope /normal
 ;f = find the whole file(just file) with telescope it can jump to parent folder too all just files;
 sf = search file base on root dir now same with :E vim;
 ;r = live grep in ur code meaning u can search like keyword to see what file contain that keyword or like insert mode like vim then u use ? or / to search but u can have preview from other files like ;f ;
@@ -50,7 +51,7 @@ sf = search file base on root dir now same with :E vim;
 ;t = help tags;
 ;; = resume the last one;
 ;e = Lists Diagnostics for all open buffers;
-# telescope sf mode 
+# telescope /sf mode 
 t = target current dir like mt(mark target);
 y = copy file you can overwrite to;
 m = move the file but must mark/selection the file or folder first;
@@ -59,14 +60,12 @@ s = select or mark all items in current dir;
 d = delete file;
 r = rename;
 c = crete new file;
-# when cmp(completion) + snip(snippet) on code
+# when cmp(completion) + snip(snippet) /insert
 Caps + e = close the completion tab;
 Caps + space = mapping completion;
 CR(enter) = confirm;
 Caps + f = scroll +4(up) docs or description of what the auto complete text about;
 Caps + d = scroll -4(down) same with Caps+f;
-# cmp(completion) & snippet
-Caps + e = exit completion words;
 Caps + n or p = manual show snippet or completion words default is automatic. Caps n or p when completion show can be use as down and up while changing the word at the same time;
 
 
