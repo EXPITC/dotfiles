@@ -71,6 +71,7 @@ s = select or mark all items in current dir;
 d = delete file;
 r = rename;
 c = crete new file;
+o = open file dir or open file;
 # when cmp(completion) + snip(snippet) /insert
 Caps + e = close the completion tab;
 Caps + space = mapping completion;
