@@ -35,8 +35,8 @@ G = move way to bottom, u can combine with visual mode;
 H/M/L = move High/Middle/Low;
 [[ = move to top;
 ]] = move to bottom;
-D = move 20 lines down;
-U = move 20 lines up (carefull u can redo);
+Caps + D = move 20 lines down;
+Caps + U = move 20 lines up (carefull u can redo);
 # comment /normal
 gcc = comment linewise;
 gbc = comment blockwise;
@@ -99,6 +99,7 @@ caps + w + ↓ = resize vim window down; apply same with left & right;
 # vimming mode control/normal
 ? = like ctrl + f for find or search;
 / = similar with ?;
+:noh =  remove highlight i.e from ? or /;
 :E = enter explore mode, more like folder format to explore;
 :E + R = renaming file , eazy way but must on explore mode by vim;
 :q! = exit without save;
