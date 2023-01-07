@@ -26,6 +26,7 @@ Caps + a = select all;
 o = insert new line;
 u = ctrl + z or back or redo;
 Caps + R = reverse the redo or u;
+n = when use ? or / will move selection to next to back previous selection use shift; 
 e = jump to end of words (punctuation considered words);
 b = jump to begin of words (punctuation considered words);
 w = jump by start of next words (punctuaion considered words);
@@ -95,7 +96,7 @@ sl = move vim window right;
 caps + w + ↑ = reseze vim window up;
 caps + w + ↓ = resize vim window down; apply same with left & right;
 
-# vimming mode control
+# vimming mode control/normal
 ? = like ctrl + f for find or search;
 / = similar with ?;
 :E = enter explore mode, more like folder format to explore;
