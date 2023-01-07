@@ -26,6 +26,7 @@ Caps + a = select all;
 o = insert new line;
 u = ctrl + z or back or redo;
 Caps + R = reverse the redo or u;
+Caps + o = back where the cursor before;
 n = when use ? or / will move selection to next to back previous selection use shift; 
 e = jump to end of words (punctuation considered words);
 b = jump to begin of words (punctuation considered words);
