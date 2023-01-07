@@ -26,12 +26,19 @@ end
 
 nvim_lsp.tailwindcss.setup {}
 
+-- enable css cmp
+local cmp_capabilities = vim.lsp.protocol.make_client_capabilities()
+cmp_capabilities = require("cmp_nvim_lsp").default_capabilities(cmp_capabilities)
+nvim_lsp.cssls.setup {
+  capabilities = cmp_capabilities
+}
+
 nvim_lsp.tsserver.setup {
   on_attach = function(client, bufnr)
     enable_format_on_save(client, bufnr)
     on_attach(client, bufnr)
   end,
-  filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+  filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
   cmd = { "typescript-language-server", "--stdio" },
   --capabilities = capabilities
 }
