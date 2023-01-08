@@ -123,6 +123,7 @@ Caps + t + n = next tmux tab;
 Caps + t + p = previous tmux tab;
 Caps + t + , = rename tmux tab;
 Caps + t + s = Move tmux tab with option & preview;
+Cpas + t + t = Tmux show time in whole scree;
 
 
 collorbuddyjkdahajs
