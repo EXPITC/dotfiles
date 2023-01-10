@@ -94,6 +94,7 @@ sh =  move to vim window left;
 sj = move vim window down;
 sk = move vim window up;
 sl = move vim window right;
+Space = jump/move window to window;
 caps + w + ↑ = reseze vim window up;
 caps + w + ↓ = resize vim window down; apply same with left & right;
 
