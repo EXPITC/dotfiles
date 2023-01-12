@@ -24,8 +24,6 @@ local on_attach = function(client, bufnr)
   --vim.api.nvim_buf_set_keymap(bufnr, 'i', '<C-i>', '<cmd>lua vim.lsp.buf.signature_help()<CR>', opts)
 end
 
-nvim_lsp.tailwindcss.setup {}
-
 -- enable css cmp
 local cmp_capabilities = vim.lsp.protocol.make_client_capabilities()
 cmp_capabilities = require("cmp_nvim_lsp").default_capabilities(cmp_capabilities)
