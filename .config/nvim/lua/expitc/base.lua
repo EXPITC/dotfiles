@@ -33,6 +33,13 @@ vim.opt.wildignore:append { '*/node_modules/*' }
 vim.cmd([[let &t_Cs = "\e[4:3m"]])
 vim.cmd([[let &t_Ce = "\e[4:0m"]])
 
+-- Default cursor
+-- block = block cursor
+-- ver25 = thin horizontal cursor
+-- hor20 = underline cursor
+-- vim.opt["guicursor"] = "n-v-c-sm:block,i-ci-ve:ver25,r-cr-o:hor20"
+vim.opt["guicursor"] = "n-v-c-sm:block,i-ci-ve:hor20,r-cr-o:hor20"
+
 -- Turn off paste mode when leaving insert
 vim.api.nvim_create_autocmd("InsertLeave", {
   pattern = '*',
