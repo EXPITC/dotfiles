@@ -14,7 +14,7 @@ packer.startup(function(use)
   -- }
   use 'folke/tokyonight.nvim' -- Theme
   use 'tjdevries/colorbuddy.nvim'
-  use 'folke/lsp-colors.nvim'
+  -- use 'folke/lsp-colors.nvim'
   use({
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
