@@ -22,7 +22,14 @@ packer.startup(function(use)
   use 'norcalli/nvim-colorizer.lua'
 
   use 'kyazdani42/nvim-web-devicons' -- File icons
-  use 'glepnir/lspsaga.nvim' -- LSP UIs
+  use({
+    'glepnir/lspsaga.nvim',
+    branch = "main",
+    event = 'BufRead',
+    config = function()
+      require('lspsaga').setup({})
+    end
+  }) -- LSP UIs
   use 'L3MON4D3/LuaSnip' -- Snippet
   use 'nvim-lualine/lualine.nvim' -- Statusline
   use 'onsails/lspkind-nvim' -- vscode-like pictograms
