@@ -8,10 +8,19 @@ vim.cmd [[packadd packer.nvim]]
 
 packer.startup(function(use)
   use 'wbthomason/packer.nvim'
-  use {
-    'svrana/neosolarized.nvim',
-    requires = { 'tjdevries/colorbuddy.nvim' }
-  }
+  -- use {
+  --   'svrana/neosolarized.nvim',
+  --   requires = { 'tjdevries/colorbuddy.nvim' }
+  -- }
+  use 'folke/tokyonight.nvim' -- Theme
+  use 'tjdevries/colorbuddy.nvim'
+  use 'folke/lsp-colors.nvim'
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
+  use 'norcalli/nvim-colorizer.lua'
+
   use 'kyazdani42/nvim-web-devicons' -- File icons
   use 'glepnir/lspsaga.nvim' -- LSP UIs
   use 'L3MON4D3/LuaSnip' -- Snippet
@@ -41,13 +50,7 @@ packer.startup(function(use)
   use 'nvim-telescope/telescope-file-browser.nvim'
 
   use 'akinsho/nvim-bufferline.lua'
-  use 'norcalli/nvim-colorizer.lua'
   use 'folke/zen-mode.nvim'
-  use 'folke/lsp-colors.nvim'
-  use({
-    "iamcco/markdown-preview.nvim",
-    run = function() vim.fn["mkdp#util#install"]() end,
-  })
 
   use 'lewis6991/gitsigns.nvim'
   use 'dinhhuy258/git.nvim' -- For git blame & browser
