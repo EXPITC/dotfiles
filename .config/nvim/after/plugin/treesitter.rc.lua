@@ -12,6 +12,7 @@ ts.setup {
   },
   ensure_installed = {
     "markdown",
+    "markdown_inline",
     "tsx",
     "toml",
     "fish",
@@ -31,3 +32,5 @@ ts.setup {
 
 local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
 parser_config.tsx.filetype_to_parsername = { "javascript", "typescript.tsx" }
+-- parser_config.markdown = { experimental = true }
+-- parser_config.markdown_inline = { experimental = true }

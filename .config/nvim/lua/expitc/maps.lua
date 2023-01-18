@@ -19,8 +19,8 @@ keymap.set('n', '<C-a>', 'gg<S-v>G')
 -- New tab
 keymap.set('n', 'te', ':tabedit<Return>')
 -- Split windowmaps
-keymap.set('n', 'ss', ':split<Return><C-w>W')
-keymap.set('n', 'sv', ':vsplit<Return><C-w>W')
+keymap.set('n', 'ss', ':set nowrap<Return>:split<Return><C-w>W')
+keymap.set('n', 'sv', ':set nowrap<Return>:vsplit<Return><C-w>W')
 -- Move window
 keymap.set('n', '<Space>', '<C-w>w')
 keymap.set('', 'sh', '<C-w>h')

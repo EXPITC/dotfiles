@@ -12,6 +12,7 @@ dd = (deleting duplicate) deleting & duplicate one line so you can p as option;
 dw = delete a word from cursor to the begining spaces or symbols, break by spaces (break space not included as deleted);
 de = same concept & behavior with dw from cursor but to end which mean to right;
 ciw = delete a word and go insert mode;
+Shift + s = deletion 1 lines then enter the insert mode;
 y = copy or yank;
 yy = copy or yank 1 line instant;
 v = visual mode select 1 charcter from cursor;

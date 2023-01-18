@@ -14,7 +14,7 @@ packer.startup(function(use)
   -- }
   use 'folke/tokyonight.nvim' -- Theme
   use 'tjdevries/colorbuddy.nvim'
-  -- use 'folke/lsp-colors.nvim'
+  use 'folke/lsp-colors.nvim'
   use({
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
@@ -24,10 +24,16 @@ packer.startup(function(use)
   use 'kyazdani42/nvim-web-devicons' -- File icons
   use({
     'glepnir/lspsaga.nvim',
+    opt = true,
     branch = "main",
-    event = 'BufRead',
+    event = { 'BufRead', 'BufReadPost' },
     config = function()
-      require('lspsaga').setup({})
+      require('lspsaga').setup({
+        scroll_preview = {
+          scroll_down = '<C-d>',
+          scroll_up = '<C-f>',
+        },
+      })
     end
   }) -- LSP UIs
   use 'L3MON4D3/LuaSnip' -- Snippet
@@ -48,7 +54,8 @@ packer.startup(function(use)
       'joosepalviste/nvim-ts-context-commentstring'
     }
   }
-
+  use { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' } -- Folding
+  use { 'lukas-reineke/indent-blankline.nvim' } -- Indent
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
 
