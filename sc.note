@@ -47,17 +47,28 @@ gbc = comment blockwise;
 # comment /visual
 gc = comment linewise;
 gb = comemnt blockwise;
+# Folding-ufo /normal
+zm = close all folding;
+zr = open all folding;
+K = peeking the folding(automatic distinguishes between hover docs);
+Enter =  close or open the current cursor folding (automa distinguishes);
+# Folding-ufo /float peeking
+Caps + d = scroll down;
+Caps + f = scroll up;
+# lspsaga /insert
+Caps + i = bring signature help when insert more like definition of functionality etc;
 # lspsaga /normal
 = = diagnostic jump next , to see diagnostic;
 K = hover doc(documentation) not just documentation but can show what functionality write is & etc that similar;
 gr = rename the same name string;
 gp = peek definition;
 gd = lsp finder to see like import export or we can say string contain in another files;
+Caps + G = Open floating terminal; #//usually i use it for git if i want in place inside the vim to update
+# lspsaga /insert
+Caps + i = bring signature help when insert more like definition of functionality etc;
 # git /normal
 \gb = open blame window;
 \go = Open file/folder in git repository;
-# lspsaga /insert
-Caps + i = bring signature help when insert more like definition of functionality etc;
 # telescope /normal
 ;f = find the whole file(just file) with telescope it can jump to parent folder too all just files;
 sf = search file base on root dir now same with :E vim;
