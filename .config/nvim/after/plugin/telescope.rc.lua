@@ -50,7 +50,7 @@ keymap('n', ';f',
       hidden = true
     })
   end
-,opts)
+  , opts)
 keymap('n', ';r', function()
   builtin.live_grep()
 end)
