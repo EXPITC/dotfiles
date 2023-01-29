@@ -15,6 +15,9 @@ alias la "ls -A"
 alias ll "ls -l"
 alias lla "ll -A"
 alias g git
+function gl 
+  git log --pretty=format:"\"%Cgreen%h %Creset%cd %Cblue[%cn] %Creset%s%C(yellow)%d%C(RESET)\"" --graph --date=relative --decorate --all
+end
 # need speed test cli
 alias ist "speedtest"
 # ide alias when tmux not running exec tmux instead
