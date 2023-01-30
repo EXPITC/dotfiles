@@ -20,6 +20,7 @@ V = visual mode select 1 block line base cursor;
 p = paste;
 r = replace one keyword, u can use it to with visual mode;
 R = replace keyword after one to next to next and go to all next until u ESC;
+v + Shift + 4 (v$) = Select from cursor and like use end key bring selection at the end of line.
 Caps + [ = esc or out;
 - = decrement num , base on cursor point, if cursor not point the num it will search the closer num from cursor to right;
 + = increment num, apply same behavior;
