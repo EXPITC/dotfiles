@@ -46,6 +46,7 @@ local opts = { noremap = true, silent = true }
 keymap('n', ';f',
   function()
     builtin.find_files({
+      file_ignore_patterns = { ".git/*" },
       no_ignore = false,
       hidden = true
     })
