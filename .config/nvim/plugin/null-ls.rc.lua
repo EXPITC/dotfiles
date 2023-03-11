@@ -12,13 +12,33 @@ local lsp_formatting = function(bufnr)
   })
 end
 
+local formatting = null_ls.builtins.formatting
+local diagnostics = null_ls.builtins.diagnostics
+local code_actions = null_ls.builtins.code_actions
+
+-- https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md
 null_ls.setup {
   sources = {
-    null_ls.builtins.formatting.prettierd,
-    null_ls.builtins.diagnostics.eslint_d.with({
-      diagnostics_format = '[eslint] #{m}\n(#{c})'
+    -- formating
+    formatting.prettierd,
+    -- formatting.eslint_d,
+
+    -- diagnostic
+    diagnostics.eslint_d.with({
+      diagnostics_format = '[eslint] #{m}\n(#{c})',
+      diagnostic_config = {
+        -- see :help vim.diagnostic.config()
+        severity_sort = true,
+      }
     }),
-    null_ls.builtins.diagnostics.fish
+    diagnostics.fish,
+    diagnostics.stylelint.with({
+      -- this for css or modern css strict
+      extra_args = { "--config", vim.fn.expand("~/.config/nvim/utils/linter-config/.stylelintrc.json") }
+    }),
+
+    -- code actions
+    code_actions.eslint_d
   },
   on_attach = function(client, bufnr)
     if client.supports_method("textDocument/formatting") then

@@ -10,6 +10,8 @@ set -g theme_hide_hostname no
 set -g theme_hostname always
 
 # aliases
+alias bake "eslint_d start;prettierd start"
+alias cake "eslint_d stop;prettierd stop"
 alias ls "ls -p -G"
 alias la "ls -A"
 alias ll "ls -l"
@@ -18,6 +20,7 @@ alias g git
 function gl 
   git log --pretty=format:"\"%Cgreen%h %Creset%cd %Cblue[%cn] %Creset%s%C(yellow)%d%C(RESET)\"" --graph --date=relative --decorate --all
 end
+# alias "gl" "git log --pretty=format:"\"%Cgreen%h %Creset%cd %Cblue[%cn] %Creset%s%C(yellow)%d%C(RESET)\"" --graph --date=relative --decorate --all"
 # need speed test cli
 alias ist "speedtest"
 # ide alias when tmux not running exec tmux instead
@@ -28,7 +31,6 @@ command -qv nvim && alias vim nvim
 if type -q exa
   alias ll "exa -l -g --icons"
   alias lla "ll -a"
-      # fd . | tree --fromfile .
 end
 
 set -gx EDITOR nvim

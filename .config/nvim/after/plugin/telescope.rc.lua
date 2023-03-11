@@ -28,9 +28,9 @@ telescope.setup {
           ['<C-w>'] = function() vim.cmd('normal vbd') end,
         },
         ['n'] = {
-          ['N'] = fb_actions.create,
+          -- ['N'] = fb_actions.create,
           ['h'] = fb_actions.goto_parent_dir,
-          ['/'] = function() vim.cmd('startinsert') end,
+          -- ['/'] = function() vim.cmd('startinsert') end,
         }
       }
     }
