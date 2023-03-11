@@ -139,6 +139,17 @@ Caps + t + , = rename tmux tab;
 Caps + t + s = Move tmux tab with option & preview;
 Cpas + t + t = Tmux show time in whole scree;
 
+# fish
+# exa
+ls = for grep list file;
+la = grab list file with -a;
+ll = grab list with catagorize;
+lla = grab list with catagorize + -a;
+lla --tree = grab list enchant with fd & tree to show tree structure;
+ist = bandwidth test enchant with okla; 
+z = move fast like a light... just joking folder cd but with cache enchant etc etc;
+gl = show git path development structure;
+
 
 collorbuddyjkdahajs
 ahsdjhasd
