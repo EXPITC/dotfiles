@@ -27,7 +27,14 @@ command -qv nvim && alias vim nvim
 # If I have exa update the alias
 if type -q exa
   alias ll "exa -l -g --icons"
-  alias lla "ll -a"
+  function lla 
+    # if have tree pack and have argument --tree
+    if type -q tree && test (count $argv) -eq 1; and test $argv[1] = "--tree" 
+      fd . | tree --fromfile .
+    else
+      ll -a
+    end
+  end
 end
 
 set -gx EDITOR nvim
