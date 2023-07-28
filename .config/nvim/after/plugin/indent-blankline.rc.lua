@@ -1,5 +1,5 @@
 local status, i = pcall(require, 'indent_blankline')
-if not status then return end
+if (not status) then return end
 
 vim.cmd [[highlight IndentBlanklineIndent1 guibg=#1f1f1f gui=nocombine]]
 -- vim.cmd [[highlight IndentBlanklineIndent1 guibg=#E06C75 gui=nocombine]]

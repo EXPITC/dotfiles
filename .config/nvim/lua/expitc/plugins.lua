@@ -35,19 +35,21 @@ packer.startup(function(use)
         },
       })
     end
-  }) -- LSP UIs
-  use 'L3MON4D3/LuaSnip' -- Snippet
-  use 'nvim-lualine/lualine.nvim' -- Statusline
-  use 'onsails/lspkind-nvim' -- vscode-like pictograms
-  use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
-  use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
-  use 'hrsh7th/nvim-cmp' -- Completion
-  use 'neovim/nvim-lspconfig' -- LSP
+  })                                    -- LSP UIs
+  use 'L3MON4D3/LuaSnip'                -- Snippet
+  use 'nvim-lualine/lualine.nvim'       -- Statusline
+  use 'onsails/lspkind-nvim'            -- vscode-like pictograms
+  use 'hrsh7th/cmp-buffer'              -- nvim-cmp source for buffer words
+  use 'hrsh7th/cmp-nvim-lsp'            -- nvim-cmp source for neovim's built-in LSP
+  use 'hrsh7th/nvim-cmp'                -- Completion
+  use 'neovim/nvim-lspconfig'           -- LSP
   use 'jose-elias-alvarez/null-ls.nvim' --diagnostic , formatting & code action
   use {
     'nvim-treesitter/nvim-treesitter',
     run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
   }
+  use 'ray-x/go.nvim'
+  use 'ray-x/guihua.lua' -- floating window support
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
   use { 'numtostr/comment.nvim',
@@ -56,7 +58,7 @@ packer.startup(function(use)
     }
   }
   use { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' } -- Folding
-  use { 'lukas-reineke/indent-blankline.nvim' } -- Indent
+  use { 'lukas-reineke/indent-blankline.nvim' }                            -- Indent
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
 
@@ -69,5 +71,4 @@ packer.startup(function(use)
 
   use 'lewis6991/gitsigns.nvim'
   use 'dinhhuy258/git.nvim' -- For git blame & browser
-
 end)

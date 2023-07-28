@@ -6,8 +6,9 @@ if (not status2) then return end
 mason.setup {}
 
 lspconfig.setup {
-  ensure_installed = { 'tailwindcss' },
+  ensure_installed = { 'tailwindcss', 'pyright' },
   automatic_installation = true
 }
 
 require 'lspconfig'.tailwindcss.setup {}
+require 'lspconfig'.pyright.setup {}

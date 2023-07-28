@@ -1,1 +1,12 @@
-{ "extends": ["stylelint-config-standard","stylelint-config-standard-scss"] }
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-standard-scss",
+    "../stylelint-config-bem-react-style"
+  ],
+  "rules": {
+    "value-no-vendor-prefix": {
+      "ignoreValues": ["cross-fade"]
+    }
+  }
+}

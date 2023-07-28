@@ -23,7 +23,11 @@ ts.setup {
     "css",
     "html",
     "javascript",
-    "lua"
+    "lua",
+    "graphql",
+    "go",
+    "regex",
+    "vim"
   },
   autotag = {
     enable = true,

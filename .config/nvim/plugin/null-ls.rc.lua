@@ -18,10 +18,15 @@ local code_actions = null_ls.builtins.code_actions
 
 -- https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md
 null_ls.setup {
+  root_dir = require("null-ls.utils").root_pattern(".git", "package.json"),
   sources = {
     -- formating
-    formatting.prettierd,
-    -- formatting.eslint_d,
+    formatting.prettierd.with({
+      arg = "--single-quote"
+    }),
+    formatting.eslint_d,
+    formatting.black.with({ "--stdin-filename", "$FILENAME", "--quiet", "-" }),
+    formatting.isort.with({ "--stdout", "--filename", "$FILENAME", "-" }),
 
     -- diagnostic
     diagnostics.eslint_d.with({
@@ -36,9 +41,15 @@ null_ls.setup {
       -- this for css or modern css strict
       extra_args = { "--config", vim.fn.expand("~/.config/nvim/utils/linter-config/.stylelintrc.json") }
     }),
+    diagnostics.flake8.with({ "--format" }),
+    diagnostics.pylint.with({
+      diagnostics_postprocess = function(diagnostic)
+        diagnostic.code = diagnostic.message_id
+      end,
+    }),
 
     -- code actions
-    code_actions.eslint_d
+    code_actions.eslint_d,
   },
   on_attach = function(client, bufnr)
     if client.supports_method("textDocument/formatting") then

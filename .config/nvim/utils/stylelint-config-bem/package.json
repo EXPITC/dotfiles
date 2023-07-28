@@ -1,0 +1,17 @@
+{
+  "name": "stylelint-config-bem",
+  "version": "1.0.0",
+  "description": "shareable config for BEM standard Stylelint",
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "BEM"
+  ],
+  "repository": "expitc/stylelint-config-bem",
+  "license": "MIT",
+  "author": "expitc",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ]
+}
